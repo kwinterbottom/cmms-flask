@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CMMS Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Work Order Dashboard</h1>
+
+    <form id="workOrderForm">
+        <input type="text" id="title" placeholder="Title" required><br>
+        <textarea id="description" placeholder="Description" required></textarea><br>
+        <button type="submit">Create Work Order</button>
+    </form>
+
+    <h2>All Work Orders</h2>
+    <div id="ordersContainer"></div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
